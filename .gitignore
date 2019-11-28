@@ -3,6 +3,7 @@ node_modules
 /dist
 package-lock.json
 sss.sh
+koa/node_modules
 
 # local env files
 .env.local
