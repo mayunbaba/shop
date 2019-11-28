@@ -5,7 +5,7 @@
       <van-tabbar-item icon="wap-home-o" to="/">首页</van-tabbar-item>
       <van-tabbar-item icon="records" to="/category">分类</van-tabbar-item>
       <van-tabbar-item icon="cart" to="/cart">购物车</van-tabbar-item>
-      <van-tabbar-item icon="contact" to="profile">我的</van-tabbar-item>
+      <van-tabbar-item icon="contact" to="/profile">我的</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>
@@ -14,15 +14,15 @@
 export default {
   data() {
     return {
-      active: 0
+      active:0
     };
   },
   created() {
-    // this.active = parseInt(localStorage.getItem("active")) || 0;
+    
   },
   methods: {
-    change(active) {
-      localStorage.setItem("active", active);
+    change() {
+      
     }
   }
 };

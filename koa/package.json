@@ -1,0 +1,21 @@
+{
+  "name": "shop-server",
+  "version": "1.0.0",
+  "description": "koa 2 example with url route",
+  "main": "app.js",
+  "scripts": {
+      "start": "nodemon app.js"
+  },
+  "keywords": [
+      "koa",
+      "async"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+      "koa": "2.0.0",
+      "koa-bodyparser": "3.2.0",
+      "koa-router": "7.0.0",
+      "nodemon": "^2.0.0"
+  }
+}
