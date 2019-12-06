@@ -2,13 +2,16 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import axios from 'axios'
 
 
 
 Vue.config.productionTip = false
+Vue.prototype.axios = axios
 
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
+
 
 
 // 按需引入vant 推荐

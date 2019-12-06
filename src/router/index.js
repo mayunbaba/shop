@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 
+let Home = ()=> import('../views/Home.vue');
 let Category = ()=> import('../views/Category.vue');
 let Cart = ()=> import('../views/Cart.vue');
 let Profile = ()=> import('../views/Profile.vue');
