@@ -18,7 +18,7 @@ Mock.mock('/api/list', {
         {
             'index|+1': 1,
             'name': '@first @last',
-            'id': '@integer(10000,99999)',
+            'id': '@integer(10000,99999)', //整数
             'date': '@datetime',
             'img': '@image("200*200")',
             'text': '@sentence(6, 22)'
@@ -32,7 +32,7 @@ let productData = () => {
     for(let i=0; i<30; i++){
         let product = {
             name: Random.ctitle(5, 20),
-            img: Random.dataImage('125x125', '农机' + Random.integer(1, 100)),
+            img: Random.dataImage('125x125', '图片' + Random.integer(1, 100)),
             price: Random.integer(1000, 10000),
             owner: Random.cname()
         };

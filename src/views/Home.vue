@@ -84,8 +84,17 @@ export default {
     });
     
     this.axios.get("/api/getVarietyItem").then(res => {
+      console.log(res);
       this.varietyItem = res.data;
     });
+    console.log(this.getName());
+  },
+  methods:{
+    getName:function(){
+      return {
+        name:'京城一灯'
+      }
+    }
   }
 };
 </script>

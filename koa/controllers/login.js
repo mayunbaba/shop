@@ -1,16 +1,15 @@
 let fn_login = async (ctx, next) => {
 
 
-ctx.set("Content-Type", "application/json")
-  ctx.response.body = ctx;
+  ctx.set("Content-Type", "application/json");
   let body = ctx.request.body;
-  let { account, password } = body;
-  
-    ctx.response.body = null;
- 
+  let { name, password } = body;
+  console.log(ctx);
+  ctx.body = ctx;
+
 
 };
 
 module.exports = {
-  'GET /api/login': fn_login
+  'POST /api/login': fn_login
 };
